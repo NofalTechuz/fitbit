@@ -2,13 +2,14 @@ const deleteFileFromFirebase = require('../../config/Firebase/firebase-delete');
 const uploadFileToFirebase = require('../../config/Firebase/firebase-upload');
 const { Help } = require('../../database/models/index');
 const fs = require('fs');
+const AppError = require("../../utils/appError");
 
 const GetHelps = async (req, res) => {
   try {
     const data = await Help.findAll();
     res.status(200).json(data);
   } catch (error) {
-    res.status(500).json({ error: error.message });
+    next(error);
   }
 };
 
@@ -23,14 +24,14 @@ const GetHelpsById = async (req, res) => {
     });
     res.status(200).json(data);
   } catch (error) {
-    res.status(500).json(error);
+    next(error);
     console.log(error);
   }
 };
 
 const AddHelps = async (req, res) => {
   if (req.file == undefined) {
-    return res.status(400).send('Please upload a file');
+    return next(new AppError("Please upload a file", 400));
   }
   const filePath = `ADMIN-1/${req.file.filename}`
   const publicUrl = await uploadFileToFirebase(req.file, filePath);
@@ -46,7 +47,7 @@ const AddHelps = async (req, res) => {
     const response = await Help.create(data);
     res.status(200).json(response);
   } catch (error) {
-    res.status(500).json(error);
+    next(error);
     console.log(error);
   }
 };
@@ -55,7 +56,7 @@ const UpdateHelps = async (req, res) => {
   const id = req.params.id;
   const currentHelp = await Help.findOne({ where: { id } });
   if (!currentHelp) {
-    return res.status(404).send('Help entry not found');
+    return next(new AppError("Help entry not found", 404));
   }
 
   if (req.file) {
@@ -85,7 +86,7 @@ const UpdateHelps = async (req, res) => {
     });
     res.status(200).json(response);
   } catch (error) {
-    res.status(500).json(error);
+    next(error);
     console.log(error);
   }
 };
@@ -101,7 +102,7 @@ const DeleteHelps = async (req, res) => {
     });
     res.status(200).json(response);
   } catch (error) {
-    res.status(500).json(error);
+    next(error);
     console.log(error);
   }
 };

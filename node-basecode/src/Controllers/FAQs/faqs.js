@@ -10,7 +10,7 @@ const AddFAQs = async (req, res) => {
         const faqs = await FAQs.create(data)
         res.status(200).json(faqs)
     } catch (error) {
-        res.status(500).json(error)
+        next(error)
         console.log(error)
     }
 }
@@ -20,7 +20,7 @@ const GetFAQs = async (req, res) => {
         const data = await FAQs.findAll();
         res.send(data);
     } catch (error) {
-        res.status(500).json(error)
+        next(error)
         console.log(error)
     }
 }
@@ -37,7 +37,7 @@ const GetFAQsById = async (req, res) => {
         })
         res.status(200).json(faqs);
     } catch (error) {
-        res.status(500).json(error)
+        next(error)
         console.log(error)
     }
 }
@@ -53,7 +53,7 @@ const DeleteFAQs = async (req, res) => {
         })
         res.status(200).json(faqs);
     } catch (error) {
-        res.status(500).json(error)
+        next(error)
         console.log(error)
     }
 }
@@ -76,7 +76,7 @@ const UpdateFAQs = async (req, res) => {
         })
         res.status(200).json(faqs);
     } catch (error) {
-        res.status(500).json(error)
+        next(error)
         console.log(error)
     }
 }

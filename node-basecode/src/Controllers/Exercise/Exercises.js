@@ -15,7 +15,7 @@ const AddExercise = async (req, res) => {
         const exercise = await Exercise.create(data);
         res.status(200).json(exercise);
     } catch (error) {
-        res.status(500).json(error);
+        next(error);
         console.log(error);
     }
 };
@@ -26,7 +26,7 @@ const GetExercises = async (req, res) => {
         const data = await Exercise.findAll();
         res.send(data);
     } catch (error) {
-        res.status(500).json(error)
+        next(error)
         console.log(error)
     }
 }
@@ -43,7 +43,7 @@ const GetExerciseById = async (req, res) => {
         })
         res.status(200).json(exercise);
     } catch (error) {
-        res.status(500).json(error)
+        next(error)
         console.log(error)
     }
 }
@@ -61,7 +61,7 @@ const DeleteExercise = async (req, res) => {
         })
         res.status(200).json(exercise);
     } catch (error) {
-        res.status(500).json(error)
+        next(error)
         console.log(error)
     }
 }
@@ -87,7 +87,7 @@ const UpdateExercise = async (req, res) => {
         })
         res.status(200).json(exercise);
     } catch (error) {
-        res.status(500).json(error)
+        next(error)
         console.log(error)
     }
 }

@@ -5,6 +5,7 @@ const fs = require('fs');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const config = require('../../config/config');
+const AppError = require("../../utils/appError");
 
 const AddUser = async (req, res) => {
   const checkEmailExist = await User.findOne({
@@ -16,7 +17,7 @@ const AddUser = async (req, res) => {
     if (req.file !== undefined) {
       fs.unlinkSync(req.file.path);
     }
-    return res.status(400).send('Email already exist');
+    return next(new AppError("Email already exist", 400));
   }
 
   const lastUser = await User.findOne({
@@ -60,7 +61,7 @@ const AddUser = async (req, res) => {
     const user = await User.create(data);
     res.status(200).json(user);
   } catch (error) {
-    res.status(500).json(error);
+    next(error);
     console.log(error);
   }
 };
@@ -70,7 +71,7 @@ const Getusers = async (req, res) => {
     const data = await User.findAll();
     res.status(200).json(data);
   } catch (error) {
-    res.status(500).json(error);
+    next(error);
     console.log(error);
   }
 };
@@ -86,7 +87,7 @@ const GetUserById = async (req, res) => {
     });
     res.status(200).json(user);
   } catch (error) {
-    res.status(500).json(error);
+    next(error);
     console.log(error);
   }
 };
@@ -103,7 +104,7 @@ const DeleteUser = async (req, res) => {
     });
     res.status(200).json(user);
   } catch (error) {
-    res.status(500).json(error);
+    next(error);
     console.log(error);
   }
 };
@@ -112,7 +113,7 @@ const UpdateUser = async (req, res) => {
   const id = req.params.id;
   const currentUser = await User.findOne({ where: { id } });
   if (!currentUser) {
-    return res.status(404).send('User not found');
+    return next(new AppError("User not found", 404));
   }
 
   if (req.file) {
@@ -154,7 +155,7 @@ const UpdateUser = async (req, res) => {
     });
     res.status(200).json(user);
   } catch (error) {
-    res.status(500).json(error);
+    next(error);
     console.log(error);
   }
 };

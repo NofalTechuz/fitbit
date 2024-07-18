@@ -1,6 +1,7 @@
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const config = require('../../config/config');
+const AppError = require("../../utils/appError");
 
 // Dummy user store (replace with database calls)
 let users = [];
@@ -11,7 +12,7 @@ const AdminRegister = async (req, res) => {
   try {
     const userExists = users.find((user) => user.email === email);
     if (userExists) {
-      return res.status(400).json({ msg: 'User already exists' });
+      return next(new AppError("User already exists", 400));
     }
 
     // Hash the password
@@ -26,7 +27,7 @@ const AdminRegister = async (req, res) => {
     res.status(201).json({ msg: 'User registered successfully' });
   } catch (error) {
     console.error(error);
-    res.status(500).json({ msg: 'Server error' });
+    next(error);
   }
 };
 
@@ -37,13 +38,13 @@ const AdminLogin = async (req, res) => {
     // Find user
     const user = users.find((user) => user.email === email);
     if (!user) {
-      return res.status(400).json({ msg: 'Invalid credentials' });
+      return next(new AppError("Invalid credentials", 400));
     }
 
     // Compare password
     const isMatch = await bcrypt.compare(password, user.password);
     if (!isMatch) {
-      return res.status(400).json({ msg: 'Invalid credentials' });
+      return next(new AppError("Invalid credentials", 400));
     } 
 
     // Generate JWT token
@@ -59,7 +60,7 @@ const AdminLogin = async (req, res) => {
     res.status(200).json({ token });
   } catch (err) {
     console.error(err);
-    res.status(500).json({ msg: 'Server error' });
+    next(err);
   }
 };
 

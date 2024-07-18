@@ -6,7 +6,7 @@ const GetLegalAgreement = async (req, res) => {
         const data = await LegalAgreement.findAll();
         res.status(200).json(data);
     } catch (error) {
-        res.status(500).json({error: error.message});
+        next(error)
     }
 };
 
@@ -21,7 +21,7 @@ const GetLegalAgreementById = async (req, res) => {
         })
         res.status(200).json(data);
     } catch (error) {
-        res.status(500).json(error)
+        next(error)
         console.log(error)
     }
 };
@@ -39,7 +39,7 @@ const AddLegalAgreement = async (req, res) => {
         const response = await LegalAgreement.create(data)
         res.status(200).json(response)
     } catch (error) {
-        res.status(500).json(error)
+        next(error)
         console.log(error)
     }
 };
@@ -61,7 +61,7 @@ const UpdateLegalAgreement = async (req, res) => {
         })
         res.status(200).json(response);
     } catch (error) {
-        res.status(500).json(error)
+        next(error)
         console.log(error)
     }
 };
@@ -77,7 +77,7 @@ const DeleteLegalAgreement = async (req, res) => {
         })
         res.status(200).json(response);
     } catch (error) {
-        res.status(500).json(error)
+        next(error)
         console.log(error)
     }
 };

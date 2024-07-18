@@ -11,7 +11,7 @@ const AddExerciseCategory = async (req, res) => {
         const exerciseCategory = await ExerciseCategory.create(data);
         res.status(200).json(exerciseCategory);
     } catch (error) {
-        res.status(500).json(error);
+        next(error);
         console.log(error);
     }
 };
@@ -22,7 +22,7 @@ const GetExerciseCategory = async (req, res) => {
         const data = await ExerciseCategory.findAll();
         res.send(data);
     } catch (error) {
-        res.status(500).json(error)
+        next(error);
         console.log(error)
     }
 }
@@ -39,7 +39,7 @@ const GetExerciseCategoryById = async (req, res) => {
         })
         res.status(200).json(exerciseCategory);
     } catch (error) {
-        res.status(500).json(error)
+        next(error);
         console.log(error)
     }
 }
@@ -56,7 +56,7 @@ const DeleteExerciseCategory = async (req, res) => {
         })
         res.status(200).json(exerciseCategory);
     } catch (error) {
-        res.status(500).json(error)
+        next(error);
         console.log(error)
     }
 }
@@ -79,7 +79,7 @@ const UpdateExerciseCategory = async (req, res) => {
         })
         res.status(200).json(exerciseCategory);
     } catch (error) {
-        res.status(500).json(error)
+        next(error);
         console.log(error)
     }
 }
