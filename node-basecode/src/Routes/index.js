@@ -9,15 +9,12 @@ const Helps = require("./Helps/helps");
 const Exercise = require("./Exercise/Exercises");
 const ExerciseCategory = require("./Exercise/ExerciseCateogry");
 
+router.use("/auth", auth);
+router.use("/user", user);
+router.use("/faqs", FAQs);
+router.use("/legalagreement", LegalAgreement);
+router.use("/helps", Helps);
+router.use("/exercise", Exercise);
+router.use("/exercisecategory", ExerciseCategory);
 
-router.use('/auth', auth);
-router.use('/user', user);
-router.use('/faqs', FAQs);
-router.use('/legalagreement', LegalAgreement);
-router.use('/helps', Helps);
-router.use('/exercise', Exercise);
-router.use('/exercisecategory', ExerciseCategory);
-
-
-
-module.exports = router
+module.exports = router;

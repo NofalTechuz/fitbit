@@ -1,9 +1,7 @@
-const { bucket } = require('./firebase-admin');
+const { bucket } = require("./firebase-admin");
 
 const deleteFileFromFirebase = async (oldFilePath) => {
-
-
-  const fileName = oldFilePath.split('/').pop();
+  const fileName = oldFilePath.split("/").pop();
   const file = bucket.file(oldFilePath);
   try {
     const [exists] = await file.exists();
@@ -13,10 +11,15 @@ const deleteFileFromFirebase = async (oldFilePath) => {
     }
 
     await file.delete();
-    console.log(`Successfully deleted file: ${fileName} from folder: ${oldFilePath}`);
+    console.log(
+      `Successfully deleted file: ${fileName} from folder: ${oldFilePath}`
+    );
   } catch (error) {
-    console.error(`Failed to delete file: ${fileName} from folder: ${oldFilePath}`, error);
-    throw new Error('Error deleting file from Firebase Storage');
+    console.error(
+      `Failed to delete file: ${fileName} from folder: ${oldFilePath}`,
+      error
+    );
+    throw new Error("Error deleting file from Firebase Storage");
   }
 };
 

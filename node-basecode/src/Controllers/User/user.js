@@ -1,10 +1,10 @@
-const deleteFileFromFirebase = require('../../config/Firebase/firebase-delete');
-const uploadFileToFirebase = require('../../config/Firebase/firebase-upload');
-const { User } = require('../../database/models/index');
-const fs = require('fs');
-const bcrypt = require('bcryptjs');
-const jwt = require('jsonwebtoken');
-const config = require('../../config/config');
+const deleteFileFromFirebase = require("../../config/Firebase/firebase-delete");
+const uploadFileToFirebase = require("../../config/Firebase/firebase-upload");
+const { User } = require("../../database/models/index");
+const fs = require("fs");
+const bcrypt = require("bcryptjs");
+const jwt = require("jsonwebtoken");
+const config = require("../../config/config");
 const AppError = require("../../utils/appError");
 
 const AddUser = async (req, res) => {
@@ -21,8 +21,8 @@ const AddUser = async (req, res) => {
   }
 
   const lastUser = await User.findOne({
-    order: [['id', 'DESC']],
-    attributes: ['id'],
+    order: [["id", "DESC"]],
+    attributes: ["id"],
   });
   const prevId = lastUser ? lastUser.id + 1 : 0;
 
@@ -119,7 +119,10 @@ const UpdateUser = async (req, res) => {
   if (req.file) {
     const filePath = `USER-${id}/${req.file.filename}`;
     const profileImageUrl = currentUser.profileImage;
-    const oldFilePath = profileImageUrl.replace('https://storage.googleapis.com/fitbit-ca9f5.appspot.com/', '');
+    const oldFilePath = profileImageUrl.replace(
+      "https://storage.googleapis.com/fitbit-ca9f5.appspot.com/",
+      ""
+    );
 
     await deleteFileFromFirebase(oldFilePath);
     const publicUrl = await uploadFileToFirebase(req.file, filePath);

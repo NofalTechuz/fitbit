@@ -36,7 +36,7 @@ const userDetailsdietaryPreferenceNumberToName = {
 };
 
 const userDetailsdietaryPreferenceNameToNumber = {
-  " Vegetraian": 1,
+  Vegetraian: 1,
   "Non-vegetraian": 2,
 };
 
@@ -46,8 +46,8 @@ const userGenderNumberToName = {
 };
 
 const userGenderNameToNumber = {
-  " male": 1,
-  " female": 2,
+  male: 1,
+  female: 2,
 };
 
 const userRoleNumberToName = {
@@ -56,8 +56,8 @@ const userRoleNumberToName = {
 };
 
 const userRoleNameToNumber = {
-  " admin": 1,
-  " user": 2,
+  admin: 1,
+  user: 2,
 };
 
 module.exports = {
