@@ -41,6 +41,7 @@ module.exports = (sequelize, DataTypes) => {
       },
       subCategory: {
         type: DataTypes.INTEGER,
+        allowNull: true,
       },
       status: {
         type: DataTypes.BOOLEAN,
@@ -49,7 +50,7 @@ module.exports = (sequelize, DataTypes) => {
     },
     {
       sequelize,
-      tableName: "exercise_category",
+      tableName: "exercise_categories",
       modelName: "ExerciseCategory",
       timestamps: true,
       paranoid: true,

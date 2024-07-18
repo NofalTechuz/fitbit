@@ -19,6 +19,7 @@ module.exports = {
       },
       sub_category: {
         type: Sequelize.INTEGER,
+        allowNull: true,
       },
       status: {
         type: Sequelize.BOOLEAN,

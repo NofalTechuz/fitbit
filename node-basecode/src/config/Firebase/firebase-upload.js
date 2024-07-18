@@ -4,7 +4,6 @@ const fs = require('fs');
 const uploadFileToFirebase = (file, filePath) => {
   return new Promise((resolve, reject) => {
 
-
     const blob = bucket.file(filePath);
     const blobStream = blob.createWriteStream({
       metadata: {
