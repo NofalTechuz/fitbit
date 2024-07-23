@@ -7,7 +7,7 @@ const jwt = require("jsonwebtoken");
 const config = require("../../config/config");
 const AppError = require("../../utils/appError");
 
-const AddUser = async (req, res) => {
+const AddUser = async (req, res, next) => {
   const checkEmailExist = await User.findOne({
     where: {
       email: req.body.email,
@@ -62,21 +62,19 @@ const AddUser = async (req, res) => {
     res.status(200).json(user);
   } catch (error) {
     next(error);
-    console.log(error);
   }
 };
 
-const Getusers = async (req, res) => {
+const Getusers = async (req, res, next) => {
   try {
     const data = await User.findAll();
     res.status(200).json(data);
   } catch (error) {
     next(error);
-    console.log(error);
   }
 };
 
-const GetUserById = async (req, res) => {
+const GetUserById = async (req, res, next) => {
   const id = req.params.id;
   try {
     const user = await User.findOne({
@@ -88,11 +86,10 @@ const GetUserById = async (req, res) => {
     res.status(200).json(user);
   } catch (error) {
     next(error);
-    console.log(error);
   }
 };
 
-const DeleteUser = async (req, res) => {
+const DeleteUser = async (req, res, next) => {
   const id = req.params.id;
 
   try {
@@ -105,11 +102,10 @@ const DeleteUser = async (req, res) => {
     res.status(200).json(user);
   } catch (error) {
     next(error);
-    console.log(error);
   }
 };
 
-const UpdateUser = async (req, res) => {
+const UpdateUser = async (req, res, next) => {
   const id = req.params.id;
   const currentUser = await User.findOne({ where: { id } });
   if (!currentUser) {
@@ -159,7 +155,6 @@ const UpdateUser = async (req, res) => {
     res.status(200).json(user);
   } catch (error) {
     next(error);
-    console.log(error);
   }
 };
 

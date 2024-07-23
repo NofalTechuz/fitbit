@@ -1,5 +1,18 @@
 const AppError = require("../utils/appError");
 
+const stringifyObject = (obj, indent = 2, depth = 0) => {
+  const padding = " ".repeat(indent * depth);
+  const entries = Object.entries(obj)
+    .map(([key, value]) => {
+      if (typeof value === "object" && value !== null) {
+        return `${padding}${key}: ${stringifyObject(value, indent, depth + 1)}`;
+      }
+      return `${padding}${key}: ${String(value)}`;
+    })
+    .join(",\n");
+  return `{\n${entries}\n${padding}}`;
+};
+
 const handleCastErrorDB = (err) => {
   const message = `Invalid ${err.path}: ${err.value}.`;
   return new AppError(message, 400);
@@ -7,6 +20,18 @@ const handleCastErrorDB = (err) => {
 
 const sendErrorDev = (err, req, res) => {
   // A) API (send every error to help in development)
+
+  //console log error
+  const errorObj = {
+    status: err?.status,
+    message: err?.message,
+    error: err,
+    stack: err?.stack,
+  };
+  const errorObjString = stringifyObject(errorObj); //stringify the object manually
+  // console.log(JSON.stringify(errorObj, null, 2)); // stringified in JSON
+  console.log(errorObjString);
+
   return res.status(err.statusCode).json({
     status: err?.status,
     error: err,

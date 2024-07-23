@@ -1,0 +1,99 @@
+[2024-07-23T11:52:57.298Z] app listening at http://localhost:8000
+[2024-07-23T11:52:57.400Z] Connection has been established successfully.
+[2024-07-23T11:53:03.282Z] {
+status: fail,
+message: Email already exist,
+error: {
+  statusCode: 400,
+  status: fail,
+  isOperational: true
+  },
+stack: Error: Email already exist
+    at AddUser (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/src/Controllers/User/user.js:20:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+}
+[2024-07-23T11:55:50.205Z] app listening at http://localhost:8000
+[2024-07-23T11:55:50.310Z] Connection has been established successfully.
+[2024-07-23T11:57:08.416Z] app listening at http://localhost:8000
+[2024-07-23T11:57:08.529Z] Connection has been established successfully.
+[2024-07-23T11:58:47.430Z] app listening at http://localhost:8000
+[2024-07-23T11:58:47.507Z] Connection has been established successfully.
+[2024-07-23T11:59:11.684Z] app listening at http://localhost:8000
+[2024-07-23T11:59:11.791Z] Connection has been established successfully.
+[2024-07-23T11:59:39.601Z] {
+status: fail,
+message: Email already exist,
+error: {
+  statusCode: 400,
+  status: fail,
+  isOperational: true
+  },
+stack: Error: Email already exist
+    at AddUser (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/src/Controllers/User/user.js:20:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+}
+[2024-07-23T12:05:10.420Z] app listening at http://localhost:8000
+[2024-07-23T12:05:10.518Z] Connection has been established successfully.
+[2024-07-23T12:05:25.683Z] app listening at http://localhost:8000
+[2024-07-23T12:05:25.779Z] Connection has been established successfully.
+[2024-07-23T12:14:29.964Z] app listening at http://localhost:8000
+[2024-07-23T12:14:30.063Z] Connection has been established successfully.
+[2024-07-23T12:15:19.217Z] app listening at http://localhost:8000
+[2024-07-23T12:15:19.311Z] Connection has been established successfully.
+[2024-07-23T12:16:47.113Z] {
+status: fail,
+message: Email already exist,
+error: {
+  statusCode: 400,
+  status: fail,
+  isOperational: true
+  },
+stack: Error: Email already exist
+    at AddUser (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/src/Controllers/User/user.js:20:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+}
+[2024-07-23T12:18:40.291Z] app listening at http://localhost:8000
+[2024-07-23T12:18:40.392Z] Connection has been established successfully.
+[2024-07-23T12:23:34.432Z] app listening at http://localhost:8000
+[2024-07-23T12:23:34.516Z] Connection has been established successfully.
+[2024-07-23T12:24:04.674Z] {"status":"fail","message":"Email already exist","error":{"statusCode":400,"status":"fail","isOperational":true},"stack":"Error: Email already exist\n    at AddUser (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/src/Controllers/User/user.js:20:17)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"}
+[2024-07-23T12:24:04.679Z] {
+status: fail,
+message: Email already exist,
+error: {
+  statusCode: 400,
+  status: fail,
+  isOperational: true
+  },
+stack: Error: Email already exist
+    at AddUser (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/src/Controllers/User/user.js:20:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+}
+[2024-07-23T12:24:58.457Z] app listening at http://localhost:8000
+[2024-07-23T12:24:58.563Z] Connection has been established successfully.
+[2024-07-23T12:25:01.853Z] {
+  "status": "fail",
+  "message": "Email already exist",
+  "error": {
+    "statusCode": 400,
+    "status": "fail",
+    "isOperational": true
+  },
+  "stack": "Error: Email already exist\n    at AddUser (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/src/Controllers/User/user.js:20:17)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+}
+[2024-07-23T12:25:01.854Z] {
+status: fail,
+message: Email already exist,
+error: {
+  statusCode: 400,
+  status: fail,
+  isOperational: true
+  },
+stack: Error: Email already exist
+    at AddUser (/home/techuz/Desktop/training/Projects/project-FitBit/fitbit/node-basecode/src/Controllers/User/user.js:20:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+}
+[2024-07-23T12:25:22.461Z] app listening at http://localhost:8000
+[2024-07-23T12:25:22.555Z] Connection has been established successfully.
+[2024-07-23T12:25:45.158Z] app listening at http://localhost:8000
+[2024-07-23T12:25:45.247Z] Connection has been established successfully.

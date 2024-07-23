@@ -1,10 +1,10 @@
-const deleteFileFromFirebase = require('../../config/Firebase/firebase-delete');
-const uploadFileToFirebase = require('../../config/Firebase/firebase-upload');
-const { Help } = require('../../database/models/index');
-const fs = require('fs');
+const deleteFileFromFirebase = require("../../config/Firebase/firebase-delete");
+const uploadFileToFirebase = require("../../config/Firebase/firebase-upload");
+const { Help } = require("../../database/models/index");
+const fs = require("fs");
 const AppError = require("../../utils/appError");
 
-const GetHelps = async (req, res) => {
+const GetHelps = async (req, res, next) => {
   try {
     const data = await Help.findAll();
     res.status(200).json(data);
@@ -13,7 +13,7 @@ const GetHelps = async (req, res) => {
   }
 };
 
-const GetHelpsById = async (req, res) => {
+const GetHelpsById = async (req, res, next) => {
   const id = req.params.id;
   try {
     const data = await Help.findOne({
@@ -25,15 +25,14 @@ const GetHelpsById = async (req, res) => {
     res.status(200).json(data);
   } catch (error) {
     next(error);
-    console.log(error);
   }
 };
 
-const AddHelps = async (req, res) => {
+const AddHelps = async (req, res, next) => {
   if (req.file == undefined) {
     return next(new AppError("Please upload a file", 400));
   }
-  const filePath = `ADMIN-1/${req.file.filename}`
+  const filePath = `ADMIN-1/${req.file.filename}`;
   const publicUrl = await uploadFileToFirebase(req.file, filePath);
   fs.unlinkSync(req.file.path);
   const data = {
@@ -48,11 +47,10 @@ const AddHelps = async (req, res) => {
     res.status(200).json(response);
   } catch (error) {
     next(error);
-    console.log(error);
   }
 };
 
-const UpdateHelps = async (req, res) => {
+const UpdateHelps = async (req, res, next) => {
   const id = req.params.id;
   const currentHelp = await Help.findOne({ where: { id } });
   if (!currentHelp) {
@@ -60,14 +58,17 @@ const UpdateHelps = async (req, res) => {
   }
 
   if (req.file) {
-    const filePath = `ADMIN-1/${req.file.filename}`
+    const filePath = `ADMIN-1/${req.file.filename}`;
     const helpfileUrl = currentHelp.file;
-    const oldFilePath = helpfileUrl.replace('https://storage.googleapis.com/fitbit-ca9f5.appspot.com/', '');
+    const oldFilePath = helpfileUrl.replace(
+      "https://storage.googleapis.com/fitbit-ca9f5.appspot.com/",
+      ""
+    );
 
     await deleteFileFromFirebase(oldFilePath);
     const publicUrl = await uploadFileToFirebase(req.file, filePath);
     fs.unlinkSync(req.file.path);
-    console.log(publicUrl)
+    console.log(publicUrl);
     req.body.file = publicUrl;
   }
   const data = {
@@ -87,11 +88,10 @@ const UpdateHelps = async (req, res) => {
     res.status(200).json(response);
   } catch (error) {
     next(error);
-    console.log(error);
   }
 };
 
-const DeleteHelps = async (req, res) => {
+const DeleteHelps = async (req, res, next) => {
   const id = req.params.id;
   try {
     const response = await Help.destroy({
@@ -103,7 +103,6 @@ const DeleteHelps = async (req, res) => {
     res.status(200).json(response);
   } catch (error) {
     next(error);
-    console.log(error);
   }
 };
 

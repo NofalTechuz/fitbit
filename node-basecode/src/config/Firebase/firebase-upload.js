@@ -1,9 +1,8 @@
-const { bucket } = require('./firebase-admin');
-const fs = require('fs');
+const { bucket } = require("./firebase-admin");
+const fs = require("fs");
 
 const uploadFileToFirebase = (file, filePath) => {
   return new Promise((resolve, reject) => {
-
     const blob = bucket.file(filePath);
     const blobStream = blob.createWriteStream({
       metadata: {
@@ -11,19 +10,19 @@ const uploadFileToFirebase = (file, filePath) => {
       },
     });
 
-    blobStream.on('error', (error) => {
+    blobStream.on("error", (error) => {
       console.error(error);
-      reject(new Error('Error uploading file to Firebase Storage'));
+      reject(new Error("Error uploading file to Firebase Storage"));
     });
 
-    blobStream.on('finish', async () => {
+    blobStream.on("finish", async () => {
       try {
         // Make the file public
         await blob.makePublic();
         const publicUrl = `https://storage.googleapis.com/${bucket.name}/${blob.name}`;
         resolve(publicUrl);
       } catch (error) {
-        reject(new Error('Error making file public'));
+        reject(new Error("Error making file public"));
       }
     });
 
@@ -32,8 +31,6 @@ const uploadFileToFirebase = (file, filePath) => {
 };
 
 module.exports = uploadFileToFirebase;
-
-
 
 // const { file } = req;
 // const blob = bucket.file(file.filename);
@@ -50,10 +47,10 @@ module.exports = uploadFileToFirebase;
 
 // blobStream.on('finish', async () => {
 //   const publicUrl = `https://storage.googleapis.com/${bucket.name}/${blob.name}`;
-  
+
 //   // Optionally, delete the file from the local filesystem
 //   fs.unlinkSync(file.path);
-  
+
 //   return res.status(200).send({ message: 'File uploaded successfully!', url: publicUrl });
 // });
 

@@ -3,8 +3,6 @@ const FAQs = express.Router();
 const FAQsController = require("../../Controllers/FAQs/faqs");
 const authMiddleware = require("../../middlewares/authMiddleware");
 
-
-
 // FAQ Routes
 FAQs.get("/", authMiddleware, FAQsController.GetFAQs);
 FAQs.get("/:id", authMiddleware, FAQsController.GetFAQsById);

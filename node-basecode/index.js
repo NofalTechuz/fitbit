@@ -11,6 +11,12 @@ const routes = require("./src/Routes/index");
 const { origin_urls } = require("./src/config/uri");
 const fs = require("fs");
 const globalErrorHandler = require("./src/middlewares/ErrorMiddleware");
+const { scheduledLog } = require("./src/config/scheduledTask");
+const AppError = require("./src/utils/appError");
+const configConsole = require("./src/config/loggingConfig");
+
+//console configuration for getting logs record in file
+configConsole();
 
 //error handling "uncaughtException"
 process.on("uncaughtException", (err) => {
@@ -38,19 +44,21 @@ app.use(globalErrorHandler);
 
 router.use("/", routes);
 
-router.get("/", async (req, res) => {
+router.get("/", async (req, res, next) => {
   try {
     res.send("Hello");
   } catch (error) {
-    res.status(500).json({ error: error.message });
+    next(error);
   }
 });
 
-router.use("*", (req, res) => {
-  res.status(404).send("Not Found");
+router.use("*", (req, res, next) => {
+  next(new AppError(`Can't find ${req.originalUrl} on this server!`, 404));
 });
 
-app.listen(port, () => {
+scheduledLog();
+
+const server = app.listen(port, () => {
   console.log(`app listening at http://localhost:${port}`);
 });
 
