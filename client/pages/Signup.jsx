@@ -1,7 +1,24 @@
 import { Link } from "react-router-dom"
 import Navigation from "../components/Navigation"
+import { useEffect, useState } from "react";
 
 function Signup() {
+    const [countries, setCountries] = useState([]);
+
+    useEffect(() => {
+        fetch('https://restcountries.com/v3.1/all')
+            .then(response => response.json())
+            .then(data => {
+                const countryData = data.map(country => ({
+                    name: country.name.common,
+                    isd_code: country.idd.root + (country.idd.suffixes ? country.idd.suffixes[0] : ''),
+                })).sort((a, b) => a.name.localeCompare(b.name));
+                setCountries(countryData);
+            })
+            .catch(error => console.error('Error fetching country data:', error));
+    }, []);
+
+
     return (
         <>
             <Navigation />
@@ -25,6 +42,55 @@ function Signup() {
                                     <input type="email" className="form-control" id="floatingInput" placeholder="name@example.com" />
                                     <label for="floatingInput">Email address</label>
                                 </div>
+
+                                <div className=" mb-3 w-100">
+                                    <label for="country">Country Code</label>
+                                    <select className="form-control p-2"
+                                        id='country'
+                                    >
+                                        <option value=''>Select a country</option>
+                                        {countries.map((country, index) => (
+                                            <option key={index} value={country.isd_code}>
+                                                {country.name} ({country.isd_code})
+                                            </option>
+                                        ))}
+                                    </select>
+                                </div>
+
+                                <div className="form-floating mb-3">
+                                    <input type="number" className="form-control" id="floatingInput" placeholder="+911231231233" />
+                                    <label for="floatingInput">Phone number</label>
+                                </div>
+
+                                <div className="form-floating mb-3">
+                                    <input type="text" className="form-control" id="floatingInput" placeholder="fitbit123" />
+                                    <label for="floatingInput">Username</label>
+                                </div>
+
+                                <div className="my-4 mx-2 d-flex gap-2 ">
+                                    <span className='font-sans font-bold text-gray-700'>Gender:</span>
+                                    <div className='form-check d-flex align-items-center gap-3 px-2'>
+                                        <div className="form-check">
+                                            <input className="form-check-input" type="radio" name="Gender" id="male" value="Male" />
+                                            <label className="form-check-label" for="male">
+                                                Male
+                                            </label>
+                                        </div>
+                                        <div className="form-check">
+                                            <input className="form-check-input" type="radio" name="Gender" id="female" value="Female" />
+                                            <label className="form-check-label" for="female">
+                                                Female
+                                            </label>
+                                        </div>
+                                        <div className="form-check">
+                                            <input className="form-check-input" type="radio" name="Gender" id="other" value="Other" />
+                                            <label className="form-check-label" for="other">
+                                            Other
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
                                 <div className="form-floating mb-3">
                                     <input type="password" className="form-control" id="floatingPassword" placeholder="Password" />
                                     <label for="floatingPassword">Password</label>

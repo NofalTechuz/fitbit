@@ -1,8 +1,11 @@
-const bcrypt = require('bcryptjs');
-const jwt = require('jsonwebtoken');
-const config = require('../../config/config');
+const bcrypt = require("bcryptjs");
+const jwt = require("jsonwebtoken");
+const config = require("../../config/config");
 const AppError = require("../../utils/appError");
-const { User } = require('../../database/models/index');
+const { User } = require("../../database/models/index");
+const Email = require("../../utils/email");
+const { Op } = require('sequelize');
+
 
 
 const AdminRegister = async (req, res, next) => {
@@ -19,8 +22,8 @@ const AdminRegister = async (req, res, next) => {
   }
 
   const lastUser = await User.findOne({
-    order: [['id', 'DESC']],
-    attributes: ['id'],
+    order: [["id", "DESC"]],
+    attributes: ["id"],
   });
   const prevId = lastUser ? lastUser.id + 1 : 0;
 
@@ -66,24 +69,39 @@ const AdminRegister = async (req, res, next) => {
 
 const AdminLogin = async (req, res, next) => {
   const { email, password } = req.body;
+  console.log(email)
 
   try {
     // Find user with Email
-    const userFind = await User.findOne({ where: { email: email } });
+
+    
+    const userFind = await User.findOne({
+      where: {
+        [Op.or]: [
+          { email: email },
+          { username: email }
+        ]
+      }
+    });
     if (!userFind) {
       return next(new AppError("Invalid credentials", 400));
     }
     
-    const user = userFind.dataValues;
+    const user = userFind.dataValues;    
 
     // Compare password
     const isMatch = await bcrypt.compare(password, user.password);
     if (!isMatch) {
       return next(new AppError("Invalid credentials", 400));
-    } 
+    }
 
     // Generate JWT token
-    const token = jwt.sign({ email: user.email }, config.jwtSecret, { expiresIn: config.jwtExpiry });
+    const token = jwt.sign({ email: user.email }, config.jwtSecret, {
+      expiresIn: config.jwtExpiry,
+    });
+
+    // Send welcome email
+    new Email(user, url).sendWelcome();
 
     res.status(200).json({ token });
   } catch (err) {
@@ -93,19 +111,17 @@ const AdminLogin = async (req, res, next) => {
 };
 
 const AdminLogout = (req, res, next) => {
-  res.clearCookie('token');
-  res.status(200).json({ msg: 'Logged out successfully' });
+  res.clearCookie("token");
+  res.status(200).json({ msg: "Logged out successfully" });
 };
 
-
 const AdminAuthCheck = (req, res, next) => {
-  
-  res.status(200).json({ msg :"Authenticated" });
+  res.status(200).json({ msg: "Authenticated" });
 };
 
 module.exports = {
   AdminRegister,
   AdminLogin,
   AdminLogout,
-  AdminAuthCheck
+  AdminAuthCheck,
 };

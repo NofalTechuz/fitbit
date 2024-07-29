@@ -1,0 +1,147 @@
+[2024-07-29T06:37:00.779Z] app listening at http://localhost:8000
+[2024-07-29T06:37:01.166Z] Connection has been established successfully.
+[2024-07-29T06:50:22.123Z] app listening at http://localhost:8000
+[2024-07-29T06:50:22.359Z] Connection has been established successfully.
+[2024-07-29T06:51:23.947Z] ReferenceError: Op is not defined
+[2024-07-29T06:51:23.949Z] {
+status: error,
+message: Op is not defined,
+error: {
+  statusCode: 500,
+  status: error
+  },
+stack: ReferenceError: Op is not defined
+    at AdminLogin (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/src/Controllers/Auth/auth.js:76:10)
+    at Layer.handle [as handle_request] (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/express/lib/router/layer.js:95:5)
+    at /home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/express/lib/router/index.js:175:3)
+    at router (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/express/lib/router/index.js:47:12)
+}
+[2024-07-29T06:51:58.940Z] app listening at http://localhost:8000
+[2024-07-29T06:51:59.144Z] Connection has been established successfully.
+[2024-07-29T06:52:12.049Z] app listening at http://localhost:8000
+[2024-07-29T06:52:12.259Z] Connection has been established successfully.
+[2024-07-29T06:52:23.067Z] Error: WHERE parameter "email" has invalid "undefined" value
+[2024-07-29T06:52:23.069Z] {
+status: error,
+message: WHERE parameter "email" has invalid "undefined" value,
+error: {
+  statusCode: 500,
+  status: error
+  },
+stack: Error: WHERE parameter "email" has invalid "undefined" value
+    at MySQLQueryGenerator.whereItemQuery (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1743:13)
+    at /home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1734:25
+    at Array.forEach (<anonymous>)
+    at MySQLQueryGenerator.whereItemsQuery (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1732:35)
+    at /home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1840:30
+    at Array.map (<anonymous>)
+    at MySQLQueryGenerator._whereGroupBind (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1839:21)
+    at MySQLQueryGenerator.whereItemQuery (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1790:19)
+    at /home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1734:25
+    at Array.forEach (<anonymous>)
+}
+[2024-07-29T06:52:56.256Z] Error: WHERE parameter "email" has invalid "undefined" value
+[2024-07-29T06:52:56.260Z] {
+status: error,
+message: WHERE parameter "email" has invalid "undefined" value,
+error: {
+  statusCode: 500,
+  status: error
+  },
+stack: Error: WHERE parameter "email" has invalid "undefined" value
+    at MySQLQueryGenerator.whereItemQuery (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1743:13)
+    at /home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1734:25
+    at Array.forEach (<anonymous>)
+    at MySQLQueryGenerator.whereItemsQuery (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1732:35)
+    at /home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1840:30
+    at Array.map (<anonymous>)
+    at MySQLQueryGenerator._whereGroupBind (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1839:21)
+    at MySQLQueryGenerator.whereItemQuery (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1790:19)
+    at /home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1734:25
+    at Array.forEach (<anonymous>)
+}
+[2024-07-29T06:53:04.726Z] Error: WHERE parameter "email" has invalid "undefined" value
+[2024-07-29T06:53:04.729Z] {
+status: error,
+message: WHERE parameter "email" has invalid "undefined" value,
+error: {
+  statusCode: 500,
+  status: error
+  },
+stack: Error: WHERE parameter "email" has invalid "undefined" value
+    at MySQLQueryGenerator.whereItemQuery (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1743:13)
+    at /home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1734:25
+    at Array.forEach (<anonymous>)
+    at MySQLQueryGenerator.whereItemsQuery (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1732:35)
+    at /home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1840:30
+    at Array.map (<anonymous>)
+    at MySQLQueryGenerator._whereGroupBind (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1839:21)
+    at MySQLQueryGenerator.whereItemQuery (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1790:19)
+    at /home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1734:25
+    at Array.forEach (<anonymous>)
+}
+[2024-07-29T06:53:49.781Z] Error: WHERE parameter "email" has invalid "undefined" value
+[2024-07-29T06:53:49.783Z] {
+status: error,
+message: WHERE parameter "email" has invalid "undefined" value,
+error: {
+  statusCode: 500,
+  status: error
+  },
+stack: Error: WHERE parameter "email" has invalid "undefined" value
+    at MySQLQueryGenerator.whereItemQuery (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1743:13)
+    at /home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1734:25
+    at Array.forEach (<anonymous>)
+    at MySQLQueryGenerator.whereItemsQuery (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1732:35)
+    at /home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1840:30
+    at Array.map (<anonymous>)
+    at MySQLQueryGenerator._whereGroupBind (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1839:21)
+    at MySQLQueryGenerator.whereItemQuery (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1790:19)
+    at /home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1734:25
+    at Array.forEach (<anonymous>)
+}
+[2024-07-29T06:54:24.372Z] app listening at http://localhost:8000
+[2024-07-29T06:54:24.621Z] Connection has been established successfully.
+[2024-07-29T06:54:29.618Z] 
+[2024-07-29T06:54:29.623Z] Error: WHERE parameter "email" has invalid "undefined" value
+[2024-07-29T06:54:29.626Z] {
+status: error,
+message: WHERE parameter "email" has invalid "undefined" value,
+error: {
+  statusCode: 500,
+  status: error
+  },
+stack: Error: WHERE parameter "email" has invalid "undefined" value
+    at MySQLQueryGenerator.whereItemQuery (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1743:13)
+    at /home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1734:25
+    at Array.forEach (<anonymous>)
+    at MySQLQueryGenerator.whereItemsQuery (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1732:35)
+    at /home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1840:30
+    at Array.map (<anonymous>)
+    at MySQLQueryGenerator._whereGroupBind (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1839:21)
+    at MySQLQueryGenerator.whereItemQuery (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1790:19)
+    at /home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1734:25
+    at Array.forEach (<anonymous>)
+}
+[2024-07-29T06:54:49.868Z] abcbca
+[2024-07-29T06:55:03.287Z] abcbca
+[2024-07-29T06:55:03.483Z] {
+status: fail,
+message: Invalid credentials,
+error: {
+  statusCode: 400,
+  status: fail,
+  isOperational: true
+  },
+stack: Error: Invalid credentials
+    at AdminLogin (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/src/Controllers/Auth/auth.js:93:19)
+}
+[2024-07-29T06:55:08.651Z] abcbca
+[2024-07-29T08:27:23.547Z] app listening at http://localhost:8000
+[2024-07-29T08:27:23.902Z] Connection has been established successfully.
