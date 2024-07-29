@@ -21,6 +21,12 @@ const handleCastErrorDB = (err) => {
   return new AppError(message, 400);
 };
 
+const handleSequelizeForeignKeyConstraintError = (err) => {
+  const message = `related Id not found for this request on database`;
+  console.log(err.message);
+  return new AppError(message, 404);
+};
+
 const sendErrorDev = (err, req, res) => {
   // A) API (send every error to help in development)
 
@@ -76,6 +82,9 @@ module.exports = (err, req, res, next) => {
     let error = { ...err };
     error.message = err.message;
     if (error.name === "CastError") error = handleCastErrorDB(error);
+    if (error.name === "SequelizeForeignKeyConstraintError")
+      error = handleSequelizeForeignKeyConstraintError(error);
+    sendErrorProd(error, req, res);
 
     sendErrorProd(error, req, res);
   }

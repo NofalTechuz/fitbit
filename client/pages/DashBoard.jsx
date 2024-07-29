@@ -3,13 +3,16 @@ import Sidebar from "../components/Sidebar"
 
 export default function DashBoard() {
     return (
-        <div className="d-flex w-100">
-            <div className="">
+        <div className="d-flex flex vh-100">
+            <div className="position">
                 <Sidebar />
             </div>
-            <div className="">
-                <Outlet />
+            <div className="overflow-y-scroll w-100">
+            <Outlet />
             </div>
-        </div>
+        </div >
+
+
+
     )
 }

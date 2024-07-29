@@ -18,7 +18,7 @@ const { scheduledLogFilesUpload } = require("./src/config/scheduledTask");
 configConsole();
 //to upload logs file in firebase everyday.
 scheduledLogFilesUpload();
-
+ 
 app.use(
   cors({
     origin: origin_urls,

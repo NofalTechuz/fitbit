@@ -1,46 +1,50 @@
 "use strict";
+const { v4: uuidv4 } = require("uuid");
 
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
-  up: async (queryInterface, Sequelize) => {
+  async up(queryInterface, Sequelize) {
     await queryInterface.bulkInsert("countries", [
       {
         name: "United States",
         emoji: "🇺🇸",
-        country_code: "US",
-        iso_code: "USA",
+        country_code: "+1",
+        iso_code: "US",
         created_at: new Date(),
         updated_at: new Date(),
+        deleted_at: null,
       },
       {
-        name: "United Kingdom",
-        emoji: "🇬🇧",
-        country_code: "GB",
-        iso_code: "GBR",
+        name: "Canada",
+        emoji: "🇨🇦",
+        country_code: "+1",
+        iso_code: "CA",
         created_at: new Date(),
         updated_at: new Date(),
+        deleted_at: null,
       },
       {
-        name: "France",
-        emoji: "🇫🇷",
-        country_code: "FR",
-        iso_code: "FRA",
+        name: "India",
+        emoji: "🇮🇳",
+        country_code: "+91",
+        iso_code: "IN",
         created_at: new Date(),
         updated_at: new Date(),
+        deleted_at: null,
       },
       {
-        name: "Germany",
-        emoji: "🇩🇪",
-        country_code: "DE",
-        iso_code: "DEU",
+        name: "Australia",
+        emoji: "🇦🇺",
+        country_code: "+61",
+        iso_code: "AU",
         created_at: new Date(),
         updated_at: new Date(),
+        deleted_at: null,
       },
-      // Add more countries as needed
     ]);
   },
 
-  down: async (queryInterface, Sequelize) => {
+  async down(queryInterface, Sequelize) {
     await queryInterface.bulkDelete("countries", null, {});
   },
 };

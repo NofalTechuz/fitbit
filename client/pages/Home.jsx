@@ -10,6 +10,7 @@ import TestimonialSection from "../components/Testimonial"
 import BlogSection from "../components/BlogSection"
 import ClassSchedule from "../components/ClassSchedule"
 import About from "../components/About"
+
 function Home() {
     return (
         <div>
@@ -19,7 +20,7 @@ function Home() {
                     <div className="carousel-inner">
                         <div className="carousel-item active">
                             <img className="w-100" src={carousel1} alt="First slide" />
-                            <div class="carousel-caption d-flex flex-column align-items-center justify-content-center"
+                            <div className="carousel-caption d-flex flex-column align-items-center justify-content-center"
                                 style={{
                                     width: "100%",
                                     left: "0",

@@ -64,7 +64,7 @@ const Navigation = () => {
                                 </div>
                                 <Link to="/contact" className="nav-item nav-link">Contact</Link>
                             </div>
-                            <Link to="" className="btn btn-primary py-md-3 px-md-5 d-none d-lg-block">Join Us</Link>
+                            <Link to="/signin" className="btn btn-primary py-md-3 px-md-5 d-none d-lg-block">Join Us</Link>
                         </div>
                     </nav>
                 </div>
