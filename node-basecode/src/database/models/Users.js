@@ -63,14 +63,11 @@ module.exports = (sequelize, DataTypes) => {
     },
     isdCode:  {
       type:DataTypes.STRING,
-      allowNull: false
+      allowNull: true
     },
     mobileNumber: {
       type: DataTypes.STRING,
-      allowNull: false,
-      validate: {
-        isNumeric: true
-      }
+      allowNull: true,
     },
     email: {
       type: DataTypes.STRING,
@@ -99,7 +96,7 @@ module.exports = (sequelize, DataTypes) => {
     },
     gender: {
       type: DataTypes.ENUM('1', '2', '3'), 
-      allowNull: false,
+      allowNull: true,
     },
     role: {
       type: DataTypes.ENUM('1', '2'), 

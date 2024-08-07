@@ -8,3 +8,185 @@
 [2024-08-07T05:29:25.562Z] basannofal04 admin@123
 [2024-08-07T05:41:55.812Z] 1
 [2024-08-07T05:42:05.774Z] 1
+[2024-08-07T05:47:36.508Z] app listening at http://localhost:8000
+[2024-08-07T05:47:37.165Z] Connection has been established successfully.
+[2024-08-07T05:47:47.730Z] 1
+[2024-08-07T06:42:13.232Z] 1
+[2024-08-07T06:42:36.500Z] 1
+[2024-08-07T06:43:07.471Z] 1
+[2024-08-07T06:43:09.220Z] 2
+[2024-08-07T06:43:16.078Z] 2
+[2024-08-07T06:43:18.728Z] 1
+[2024-08-07T07:24:44.026Z] app listening at http://localhost:8000
+[2024-08-07T07:24:44.237Z] Connection has been established successfully.
+[2024-08-07T07:29:10.011Z] ReferenceError: client is not defined
+[2024-08-07T07:30:03.408Z] app listening at http://localhost:8000
+[2024-08-07T07:30:03.609Z] Connection has been established successfully.
+[2024-08-07T07:30:07.576Z] Error: secretOrPrivateKey must have a value
+[2024-08-07T07:30:58.913Z] app listening at http://localhost:8000
+[2024-08-07T07:30:59.092Z] Connection has been established successfully.
+[2024-08-07T07:31:06.056Z] [object Object]
+[2024-08-07T07:31:06.085Z] Error: secretOrPrivateKey must have a value
+[2024-08-07T07:32:47.471Z] app listening at http://localhost:8000
+[2024-08-07T07:32:47.638Z] Connection has been established successfully.
+[2024-08-07T07:32:55.361Z] [object Object]
+[2024-08-07T08:09:33.411Z] [object Object]
+[2024-08-07T08:10:17.868Z] app listening at http://localhost:8000
+[2024-08-07T08:10:18.052Z] Connection has been established successfully.
+[2024-08-07T08:10:26.925Z] [object Object]
+[2024-08-07T08:10:27.004Z] [object SequelizeInstance:User]
+[2024-08-07T08:14:23.270Z] app listening at http://localhost:8000
+[2024-08-07T08:14:23.435Z] Connection has been established successfully.
+[2024-08-07T08:14:28.763Z] [object Object]
+[2024-08-07T08:14:28.791Z] ################################################################
+[2024-08-07T08:14:28.792Z] [object SequelizeInstance:User]
+[2024-08-07T08:14:28.793Z] ################################################################
+[2024-08-07T08:15:16.289Z] app listening at http://localhost:8000
+[2024-08-07T08:15:16.492Z] Connection has been established successfully.
+[2024-08-07T08:16:20.803Z] app listening at http://localhost:8000
+[2024-08-07T08:16:21.030Z] Connection has been established successfully.
+[2024-08-07T08:16:29.328Z] [object Object]
+[2024-08-07T08:16:29.488Z] SequelizeValidationError: notNull Violation: User.uuid cannot be null,
+notNull Violation: User.isdCode cannot be null,
+notNull Violation: User.mobileNumber cannot be null,
+notNull Violation: User.username cannot be null,
+notNull Violation: User.password cannot be null,
+notNull Violation: User.gender cannot be null,
+notNull Violation: User.role cannot be null
+[2024-08-07T08:19:50.338Z] [object Object]
+[2024-08-07T08:19:50.491Z] SequelizeValidationError: notNull Violation: User.uuid cannot be null,
+notNull Violation: User.isdCode cannot be null,
+notNull Violation: User.mobileNumber cannot be null,
+notNull Violation: User.username cannot be null,
+notNull Violation: User.password cannot be null,
+notNull Violation: User.gender cannot be null,
+notNull Violation: User.role cannot be null
+[2024-08-07T08:22:00.614Z] app listening at http://localhost:8000
+[2024-08-07T08:22:00.765Z] Connection has been established successfully.
+[2024-08-07T08:23:31.719Z] app listening at http://localhost:8000
+[2024-08-07T08:23:31.877Z] Connection has been established successfully.
+[2024-08-07T08:23:59.307Z] app listening at http://localhost:8000
+[2024-08-07T08:23:59.475Z] Connection has been established successfully.
+[2024-08-07T08:24:10.474Z] [object Object]
+[2024-08-07T08:24:10.776Z] SequelizeValidationError: notNull Violation: User.uuid cannot be null,
+notNull Violation: User.isdCode cannot be null,
+notNull Violation: User.mobileNumber cannot be null,
+notNull Violation: User.gender cannot be null,
+notNull Violation: User.role cannot be null
+[2024-08-07T08:29:21.332Z] app listening at http://localhost:8000
+[2024-08-07T08:29:21.504Z] Connection has been established successfully.
+[2024-08-07T08:31:20.346Z] app listening at http://localhost:8000
+[2024-08-07T08:31:20.659Z] Connection has been established successfully.
+[2024-08-07T08:32:12.905Z] app listening at http://localhost:8000
+[2024-08-07T08:32:13.085Z] Connection has been established successfully.
+[2024-08-07T08:36:41.844Z] [object Object]
+[2024-08-07T08:36:42.168Z] SequelizeValidationError: notNull Violation: User.uuid cannot be null,
+notNull Violation: User.isdCode cannot be null,
+notNull Violation: User.mobileNumber cannot be null,
+notNull Violation: User.gender cannot be null,
+notNull Violation: User.role cannot be null
+[2024-08-07T08:39:52.713Z] app listening at http://localhost:8000
+[2024-08-07T08:39:52.994Z] Connection has been established successfully.
+[2024-08-07T08:40:34.348Z] app listening at http://localhost:8000
+[2024-08-07T08:40:34.568Z] Connection has been established successfully.
+[2024-08-07T08:40:44.464Z] [object Object]
+[2024-08-07T08:40:44.750Z] SequelizeValidationError: notNull Violation: User.uuid cannot be null
+[2024-08-07T08:41:49.117Z] app listening at http://localhost:8000
+[2024-08-07T08:41:49.949Z] Connection has been established successfully.
+[2024-08-07T08:42:04.973Z] app listening at http://localhost:8000
+[2024-08-07T08:42:05.379Z] Connection has been established successfully.
+[2024-08-07T08:42:15.311Z] [object Object]
+[2024-08-07T08:42:15.567Z] )(((((((((((((((((((())(()))()()()))))))))))))))))))(
+[2024-08-07T08:42:15.567Z] [object Object]
+[2024-08-07T08:42:15.567Z] )(((((((((((((((((((())(()))()()()))))))))))))))))))(
+[2024-08-07T08:43:32.156Z] app listening at http://localhost:8000
+[2024-08-07T08:43:32.454Z] Connection has been established successfully.
+[2024-08-07T08:45:37.911Z] app listening at http://localhost:8000
+[2024-08-07T08:45:38.186Z] Connection has been established successfully.
+[2024-08-07T08:47:45.969Z] app listening at http://localhost:8000
+[2024-08-07T08:47:46.357Z] Connection has been established successfully.
+[2024-08-07T08:49:21.705Z] app listening at http://localhost:8000
+[2024-08-07T08:49:22.008Z] Connection has been established successfully.
+[2024-08-07T08:49:35.911Z] [object Object]
+[2024-08-07T08:49:36.403Z] $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+[2024-08-07T08:49:36.403Z] [object SequelizeInstance:User]
+[2024-08-07T08:49:36.404Z] [object Object]
+[2024-08-07T08:49:36.404Z] $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+[2024-08-07T08:52:10.704Z] app listening at http://localhost:8000
+[2024-08-07T08:52:10.989Z] Connection has been established successfully.
+[2024-08-07T08:53:53.335Z] app listening at http://localhost:8000
+[2024-08-07T08:53:58.766Z] Connection has been established successfully.
+[2024-08-07T08:54:23.404Z] [object Object]
+[2024-08-07T08:55:03.731Z] app listening at http://localhost:8000
+[2024-08-07T08:55:04.499Z] Connection has been established successfully.
+[2024-08-07T08:58:35.216Z] [object Object]
+[2024-08-07T09:08:10.006Z] app listening at http://localhost:8000
+[2024-08-07T09:08:10.631Z] Connection has been established successfully.
+[2024-08-07T09:09:18.528Z] app listening at http://localhost:8000
+[2024-08-07T09:09:18.871Z] Connection has been established successfully.
+[2024-08-07T09:13:34.448Z] [object Object]
+[2024-08-07T09:17:24.057Z] [object Object]
+[2024-08-07T09:18:09.273Z] [object Object]
+[2024-08-07T09:18:32.402Z] [object Object]
+[2024-08-07T09:18:54.830Z] [object Object]
+[2024-08-07T09:30:19.553Z] [object Object]
+[2024-08-07T09:38:21.400Z] app listening at http://localhost:8000
+[2024-08-07T09:38:22.065Z] Connection has been established successfully.
+[2024-08-07T09:46:10.572Z] app listening at http://localhost:8000
+[2024-08-07T09:46:11.190Z] Connection has been established successfully.
+[2024-08-07T09:56:40.424Z] [object Object]
+[2024-08-07T10:01:52.418Z] [object Object]
+[2024-08-07T10:02:59.701Z] [object Object]
+[2024-08-07T10:13:39.807Z] SequelizeConnectionError: connect ETIMEDOUT
+[2024-08-07T10:13:39.824Z] {
+status: error,
+message: connect ETIMEDOUT,
+error: {
+  name: SequelizeConnectionError,
+  parent: {
+    errorno: ETIMEDOUT,
+    code: ETIMEDOUT,
+    syscall: connect,
+    fatal: true
+    },
+  original: {
+    errorno: ETIMEDOUT,
+    code: ETIMEDOUT,
+    syscall: connect,
+    fatal: true
+    },
+  statusCode: 500,
+  status: error
+  },
+stack: SequelizeConnectionError: connect ETIMEDOUT
+    at ConnectionManager.connect (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/sequelize/lib/dialects/mysql/connection-manager.js:102:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async ConnectionManager._connect (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:222:24)
+}
+[2024-08-07T10:21:50.507Z] [object Object]
+[2024-08-07T10:23:18.639Z] {
+status: fail,
+message: Username already exist,
+error: {
+  statusCode: 400,
+  status: fail,
+  isOperational: true
+  },
+stack: Error: Username already exist
+    at AddUser (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/src/Controllers/User/user.js:21:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+}
+[2024-08-07T10:24:07.877Z] {
+status: fail,
+message: Username already exist,
+error: {
+  statusCode: 400,
+  status: fail,
+  isOperational: true
+  },
+stack: Error: Username already exist
+    at AddUser (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/src/Controllers/User/user.js:21:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+}
+[2024-08-07T10:24:14.276Z] 
+[2024-08-07T10:24:29.179Z] basannofal4 admin@123
