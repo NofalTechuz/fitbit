@@ -44,7 +44,7 @@ const getChats = async (req, res) => {
             include: [
                 {
                     model: ChatFile,
-                    as: 'chat_files',
+                    // as: 'chat_files',
                     attributes: ["id", "file", "file_type"],
                 },
             ],
