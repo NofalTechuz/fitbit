@@ -9,6 +9,8 @@ const Helps = require("./Helps/helps");
 const Exercise = require("./Exercise/Exercises");
 const ExerciseCategory = require("./Exercise/ExerciseCateogry");
 const DietPlan = require("./DietPlan/dietPlan");
+const Chats = require("./Chat/Chats");
+
 
 router.use("/auth", auth);
 router.use("/user", user);
@@ -18,5 +20,6 @@ router.use("/helps", Helps);
 router.use("/exercise", Exercise);
 router.use("/exercisecategory", ExerciseCategory);
 router.use("/dietplan", DietPlan);
+router.use("/chats", Chats);
 
 module.exports = router;
