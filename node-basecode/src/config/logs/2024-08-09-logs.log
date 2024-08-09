@@ -1,0 +1,271 @@
+[2024-08-09T05:48:14.406Z] app listening at http://localhost:8000
+[2024-08-09T05:48:16.615Z] Connection has been established successfully.
+[2024-08-09T05:48:26.202Z] 22 null
+[2024-08-09T05:48:26.308Z] 22 2
+[2024-08-09T05:48:35.518Z] 22 3
+[2024-08-09T05:48:36.884Z] 22 2
+[2024-08-09T05:48:38.088Z] 22 6
+[2024-08-09T05:48:39.336Z] 22 7
+[2024-08-09T05:48:40.828Z] 22 14
+[2024-08-09T05:48:42.089Z] 22 23
+[2024-08-09T05:48:44.344Z] 22 24
+[2024-08-09T05:48:45.242Z] 22 14
+[2024-08-09T05:48:46.269Z] 22 8
+[2024-08-09T05:48:47.467Z] 22 6
+[2024-08-09T05:49:19.964Z] 22 2
+[2024-08-09T05:49:20.457Z] 22 2
+[2024-08-09T05:49:20.470Z] 22 2
+[2024-08-09T05:49:20.615Z] 22 2
+[2024-08-09T05:49:21.750Z] 22 5
+[2024-08-09T05:49:22.710Z] 22 6
+[2024-08-09T05:49:24.661Z] 22 17
+[2024-08-09T05:49:25.603Z] 22 22
+[2024-08-09T05:49:26.275Z] 22 23
+[2024-08-09T05:49:28.493Z] 22 null
+[2024-08-09T05:49:28.501Z] 22 null
+[2024-08-09T05:49:28.559Z] 22 2
+[2024-08-09T05:49:31.185Z] 22 5
+[2024-08-09T05:49:44.437Z] 22 5
+[2024-08-09T05:49:44.590Z] 22 2
+[2024-08-09T05:49:45.916Z] 22 null
+[2024-08-09T05:49:45.976Z] 22 2
+[2024-08-09T05:50:35.744Z] 22 null
+[2024-08-09T05:50:35.926Z] 22 2
+[2024-08-09T05:50:46.596Z] 22 null
+[2024-08-09T05:50:46.787Z] 22 2
+[2024-08-09T05:51:31.652Z] 22 null
+[2024-08-09T05:51:31.880Z] 22 2
+[2024-08-09T05:51:38.286Z] 22 null
+[2024-08-09T05:51:38.521Z] 22 2
+[2024-08-09T05:51:56.707Z] app listening at http://localhost:8000
+[2024-08-09T05:51:56.895Z] Connection has been established successfully.
+[2024-08-09T05:52:02.182Z] 22 null
+[2024-08-09T05:52:02.364Z] 22 2
+[2024-08-09T05:52:08.408Z] 22 null
+[2024-08-09T05:52:08.515Z] 22 2
+[2024-08-09T05:52:10.076Z] 22 23
+[2024-08-09T05:56:04.804Z] 22 23
+[2024-08-09T05:56:05.023Z] 22 2
+[2024-08-09T05:56:48.114Z] app listening at http://localhost:8000
+[2024-08-09T05:56:48.410Z] Connection has been established successfully.
+[2024-08-09T05:57:24.972Z] app listening at http://localhost:8000
+[2024-08-09T05:57:25.243Z] Connection has been established successfully.
+[2024-08-09T05:58:01.231Z] app listening at http://localhost:8000
+[2024-08-09T05:58:01.692Z] Connection has been established successfully.
+[2024-08-09T05:58:21.913Z] 22 null
+[2024-08-09T05:58:22.094Z] 22 2
+[2024-08-09T05:58:28.372Z] UNHANDLED REJECTION! Shutting down...
+[2024-08-09T05:58:28.373Z] error : TypeError
+[2024-08-09T05:58:28.373Z] message : Cannot convert object to primitive value
+[2024-08-09T05:58:28.374Z] stack : TypeError: Cannot convert object to primitive value
+    at Array.join (<anonymous>)
+    at console.log (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/src/config/loggingConfig.js:55:29)
+    at createChats (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/src/Controllers/Chats/Chats.js:8:13)
+    at Layer.handle [as handle_request] (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/express/lib/router/route.js:149:13)
+    at done (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/lib/make-middleware.js:45:7)
+    at indicateDone (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/lib/make-middleware.js:49:68)
+    at /home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/lib/make-middleware.js:155:11
+    at WriteStream.<anonymous> (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/storage/disk.js:43:9)
+    at WriteStream.emit (node:events:525:35)
+[2024-08-09T05:58:53.795Z] app listening at http://localhost:8000
+[2024-08-09T05:58:54.102Z] Connection has been established successfully.
+[2024-08-09T05:58:58.252Z] UNHANDLED REJECTION! Shutting down...
+[2024-08-09T05:58:58.252Z] error : TypeError
+[2024-08-09T05:58:58.253Z] message : Cannot convert object to primitive value
+[2024-08-09T05:58:58.255Z] stack : TypeError: Cannot convert object to primitive value
+    at Array.join (<anonymous>)
+    at console.log (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/src/config/loggingConfig.js:55:29)
+    at createChats (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/src/Controllers/Chats/Chats.js:8:13)
+    at Layer.handle [as handle_request] (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/express/lib/router/route.js:149:13)
+    at done (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/lib/make-middleware.js:45:7)
+    at indicateDone (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/lib/make-middleware.js:49:68)
+    at /home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/lib/make-middleware.js:155:11
+    at WriteStream.<anonymous> (/home/brijesh/Desktop/FitBit/Full stack Base Code/node-basecode/node_modules/multer/storage/disk.js:43:9)
+    at WriteStream.emit (node:events:525:35)
+[2024-08-09T05:59:24.398Z] app listening at http://localhost:8000
+[2024-08-09T05:59:24.613Z] Connection has been established successfully.
+[2024-08-09T05:59:29.038Z] LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
+[2024-08-09T05:59:29.039Z] [object Object]
+[2024-08-09T06:00:09.674Z] app listening at http://localhost:8000
+[2024-08-09T06:00:10.204Z] Connection has been established successfully.
+[2024-08-09T06:00:10.483Z] 22 2 
+[2024-08-09T06:00:10.484Z] LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
+[2024-08-09T06:00:10.484Z] [object Object]
+[2024-08-09T06:01:03.383Z] app listening at http://localhost:8000
+[2024-08-09T06:01:03.967Z] Connection has been established successfully.
+[2024-08-09T06:01:04.982Z] 22 2 
+[2024-08-09T06:01:04.982Z] LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
+[2024-08-09T06:01:04.983Z] [object Object]
+[2024-08-09T06:02:20.221Z] app listening at http://localhost:8000
+[2024-08-09T06:02:20.526Z] Connection has been established successfully.
+[2024-08-09T06:02:27.183Z] app listening at http://localhost:8000
+[2024-08-09T06:02:27.544Z] Connection has been established successfully.
+[2024-08-09T06:02:28.713Z] 22 2 
+[2024-08-09T06:02:28.714Z] LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
+[2024-08-09T06:02:28.714Z] [object Object]
+[2024-08-09T06:02:47.523Z] 22 2 HElllo
+[2024-08-09T06:02:47.524Z] LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
+[2024-08-09T06:02:47.525Z] [object Object]
+[2024-08-09T06:03:06.937Z] 22 2 HElllo
+[2024-08-09T06:03:06.938Z] LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
+[2024-08-09T06:03:06.939Z] [object Object],[object Object],[object Object],[object Object]
+[2024-08-09T06:03:59.058Z] app listening at http://localhost:8000
+[2024-08-09T06:04:02.459Z] Connection has been established successfully.
+[2024-08-09T06:04:03.386Z] 22 2 HElllo
+[2024-08-09T06:04:03.387Z] LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
+[2024-08-09T06:04:03.388Z] 
+[2024-08-09T06:04:03.389Z] 
+[2024-08-09T06:05:34.491Z] app listening at http://localhost:8000
+[2024-08-09T06:05:34.684Z] Connection has been established successfully.
+[2024-08-09T06:07:00.232Z] app listening at http://localhost:8000
+[2024-08-09T06:07:00.545Z] Connection has been established successfully.
+[2024-08-09T06:07:11.219Z] 22 2 HElllo
+[2024-08-09T06:07:11.220Z] LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
+[2024-08-09T06:07:11.221Z] [object Object],[object Object]
+[2024-08-09T06:07:11.224Z] files-1723183631205.png,files-1723183631209.png
+[2024-08-09T06:13:05.823Z] app listening at http://localhost:8000
+[2024-08-09T06:13:06.180Z] Connection has been established successfully.
+[2024-08-09T06:13:21.742Z] app listening at http://localhost:8000
+[2024-08-09T06:13:23.070Z] Connection has been established successfully.
+[2024-08-09T06:13:26.886Z] app listening at http://localhost:8000
+[2024-08-09T06:13:27.091Z] Connection has been established successfully.
+[2024-08-09T06:13:43.039Z] app listening at http://localhost:8000
+[2024-08-09T06:13:43.225Z] Connection has been established successfully.
+[2024-08-09T06:13:56.250Z] app listening at http://localhost:8000
+[2024-08-09T06:13:56.450Z] Connection has been established successfully.
+[2024-08-09T06:14:10.314Z] app listening at http://localhost:8000
+[2024-08-09T06:14:10.566Z] Connection has been established successfully.
+[2024-08-09T06:14:46.078Z] app listening at http://localhost:8000
+[2024-08-09T06:14:46.362Z] Connection has been established successfully.
+[2024-08-09T06:14:53.707Z] app listening at http://localhost:8000
+[2024-08-09T06:14:54.153Z] Connection has been established successfully.
+[2024-08-09T06:15:04.066Z] 22 2 HElllo
+[2024-08-09T06:15:19.652Z] 22 2 HElllo
+[2024-08-09T06:15:43.661Z] app listening at http://localhost:8000
+[2024-08-09T06:15:43.933Z] Connection has been established successfully.
+[2024-08-09T06:15:50.217Z] 22 2 HElllo
+[2024-08-09T06:15:56.145Z] 22 2
+[2024-08-09T06:16:03.902Z] 22 5
+[2024-08-09T06:16:19.193Z] 22 5 Share
+[2024-08-09T06:16:25.028Z] 22 5
+[2024-08-09T06:16:52.241Z] app listening at http://localhost:8000
+[2024-08-09T06:16:52.451Z] Connection has been established successfully.
+[2024-08-09T06:17:06.823Z] 22 6
+[2024-08-09T06:17:08.183Z] 22 5
+[2024-08-09T06:18:01.895Z] app listening at http://localhost:8000
+[2024-08-09T06:18:02.109Z] Connection has been established successfully.
+[2024-08-09T06:18:37.460Z] 22 24
+[2024-08-09T06:18:38.304Z] 22 23
+[2024-08-09T06:18:45.542Z] 22 23 Good Morning
+[2024-08-09T06:18:45.726Z] 22 23
+[2024-08-09T06:19:21.734Z] 22 23
+[2024-08-09T06:19:21.874Z] 22 2
+[2024-08-09T06:19:29.643Z] 22 2 
+[2024-08-09T06:20:09.239Z] app listening at http://localhost:8000
+[2024-08-09T06:20:09.435Z] Connection has been established successfully.
+[2024-08-09T06:20:14.673Z] 22 2 
+[2024-08-09T06:20:27.993Z] app listening at http://localhost:8000
+[2024-08-09T06:20:28.279Z] Connection has been established successfully.
+[2024-08-09T06:20:35.349Z] 22 null
+[2024-08-09T06:20:35.589Z] 22 2
+[2024-08-09T06:20:40.070Z] 22 23
+[2024-08-09T06:20:46.474Z] 22 23 
+[2024-08-09T06:21:14.854Z] app listening at http://localhost:8000
+[2024-08-09T06:21:16.045Z] Connection has been established successfully.
+[2024-08-09T06:22:32.524Z] 22 null
+[2024-08-09T06:22:32.800Z] 22 2
+[2024-08-09T06:22:34.812Z] 22 23
+[2024-08-09T06:22:40.245Z] 22 23 
+[2024-08-09T06:22:49.514Z] 22 23
+[2024-08-09T06:23:16.308Z] 22 23 
+[2024-08-09T06:23:21.827Z] 22 23
+[2024-08-09T06:24:40.241Z] 22 23
+[2024-08-09T06:24:40.459Z] 22 2
+[2024-08-09T06:26:03.126Z] 22 null
+[2024-08-09T06:26:03.442Z] 22 2
+[2024-08-09T06:26:09.324Z] 22 2 
+[2024-08-09T06:26:16.686Z] 22 2
+[2024-08-09T06:26:28.066Z] 22 2 
+[2024-08-09T06:26:34.422Z] 22 2
+[2024-08-09T06:48:17.214Z] 22 null
+[2024-08-09T06:48:17.660Z] 22 2
+[2024-08-09T06:48:53.214Z] 22 23
+[2024-08-09T06:55:08.777Z] 22 null
+[2024-08-09T06:55:09.133Z] 22 2
+[2024-08-09T06:55:32.981Z] 22 2
+[2024-08-09T06:55:33.195Z] 22 2
+[2024-08-09T06:55:54.848Z] 22 2
+[2024-08-09T06:55:54.977Z] 22 2
+[2024-08-09T06:56:19.193Z] 22 2
+[2024-08-09T06:56:19.476Z] 22 2
+[2024-08-09T06:56:27.781Z] 22 23
+[2024-08-09T06:56:50.053Z] 22 2
+[2024-08-09T06:57:43.281Z] app listening at http://localhost:8000
+[2024-08-09T06:57:43.457Z] Connection has been established successfully.
+[2024-08-09T06:57:45.566Z] 22 null
+[2024-08-09T06:57:45.673Z] 22 2
+[2024-08-09T06:57:55.454Z] 22 17
+[2024-08-09T06:57:57.242Z] 22 23
+[2024-08-09T06:58:03.152Z] 22 2
+[2024-08-09T06:58:26.494Z] 22 5
+[2024-08-09T06:58:57.242Z] 22 5 
+[2024-08-09T06:59:11.063Z] 22 5
+[2024-08-09T07:00:52.451Z] 22 5
+[2024-08-09T07:00:52.601Z] 22 2
+[2024-08-09T07:01:43.319Z] 22 null
+[2024-08-09T07:01:43.583Z] 22 2
+[2024-08-09T07:01:58.069Z] 22 null
+[2024-08-09T07:01:58.189Z] 22 2
+[2024-08-09T07:02:05.714Z] 22 22
+[2024-08-09T07:02:06.284Z] 22 23
+[2024-08-09T07:02:34.347Z] 22 23
+[2024-08-09T07:02:34.525Z] 22 2
+[2024-08-09T07:02:58.748Z] 22 2
+[2024-08-09T07:02:58.865Z] 22 2
+[2024-08-09T07:03:08.352Z] 22 2
+[2024-08-09T07:03:08.399Z] 22 2
+[2024-08-09T07:03:22.631Z] 22 2
+[2024-08-09T07:03:22.792Z] 22 2
+[2024-08-09T07:03:34.005Z] 22 2
+[2024-08-09T07:03:34.132Z] 22 2
+[2024-08-09T07:04:10.290Z] 22 2
+[2024-08-09T07:04:10.653Z] 22 2
+[2024-08-09T07:04:18.552Z] 22 2
+[2024-08-09T07:04:18.666Z] 22 2
+[2024-08-09T07:04:25.113Z] 22 17
+[2024-08-09T07:04:26.416Z] 22 10
+[2024-08-09T07:04:27.326Z] 22 14
+[2024-08-09T07:04:28.271Z] 22 6
+[2024-08-09T07:04:29.065Z] 22 3
+[2024-08-09T07:04:31.249Z] 22 2
+[2024-08-09T07:04:42.799Z] 22 2
+[2024-08-09T07:04:42.900Z] 22 2
+[2024-08-09T07:06:45.149Z] 22 2
+[2024-08-09T07:06:45.327Z] 22 2
+[2024-08-09T07:07:47.446Z] 22 2
+[2024-08-09T07:07:47.552Z] 22 2
+[2024-08-09T07:07:51.425Z] 22 22
+[2024-08-09T07:07:52.239Z] 22 23
+[2024-08-09T07:07:54.910Z] 22 17
+[2024-08-09T07:07:56.352Z] 22 14
+[2024-08-09T07:07:57.861Z] 22 23
+[2024-08-09T07:07:58.517Z] 22 24
+[2024-08-09T07:07:59.457Z] 22 14
+[2024-08-09T07:08:00.237Z] 22 10
+[2024-08-09T07:08:01.047Z] 22 9
+[2024-08-09T07:08:02.574Z] 22 10
+[2024-08-09T07:08:07.760Z] 22 2
+[2024-08-09T07:08:14.535Z] 22 22
+[2024-08-09T07:08:17.575Z] 22 10
+[2024-08-09T07:08:40.901Z] 22 10
+[2024-08-09T07:08:41.038Z] 22 2
+[2024-08-09T07:09:38.038Z] 22 2
+[2024-08-09T07:09:38.224Z] 22 2
+[2024-08-09T07:09:46.476Z] 22 3
+[2024-08-09T07:09:47.257Z] 22 2
+[2024-08-09T07:09:48.073Z] 22 7
+[2024-08-09T07:09:48.943Z] 22 10
+[2024-08-09T07:09:49.785Z] 22 22
+[2024-08-09T07:09:52.268Z] 22 2

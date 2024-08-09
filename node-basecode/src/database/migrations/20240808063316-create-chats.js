@@ -27,7 +27,7 @@ module.exports = {
       },
       message: {
         type: Sequelize.TEXT,
-        allowNull: false
+        allowNull: true
       },
       created_at: {
         allowNull: false,
